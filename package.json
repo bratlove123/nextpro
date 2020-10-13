@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "tslint": "tslint -p . -c tslint.json"
   },
   "husky": {
@@ -27,6 +27,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

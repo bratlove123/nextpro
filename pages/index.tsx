@@ -1,7 +1,18 @@
-import Header from '@components/layouts/header/header';
+import React from 'react';
 
-function HomePage() {
-  return <div><Header/>Welcome to Next.js!</div>;
+// bring Provider from react-redux, it's the bridge for connecting react to redux
+import { Provider } from 'react-redux';
+
+// Bring the redux store too
+import store from '../redux/store';
+import { Login } from './login';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <Login />
+    </Provider>
+  );
 }
 
-export default HomePage;
+export default App;
